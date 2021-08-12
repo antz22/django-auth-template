@@ -7,6 +7,12 @@ Packages:
 - [django-cors-headers](https://github.com/adamchainz/django-cors-headers) for CORS security
 - [djoser](https://github.com/sunscrapers/djoser) for handling of authentication
 
+Features:
+- Adds template code for models.py, serializers.py and urls.py
+- Creates views.py functions and urls for APIView of the example model and creating an example model
+- Adds django-cors-headers security and middleware in settings.py
+- Registers example models in admin.py
+
 ## Installation
 
 In your terminal, run these commands.
