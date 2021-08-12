@@ -14,9 +14,9 @@ In your terminal, run these commands.
 First, clone the repository to get the files on your local system.
 
 ```shell
-git clone https://github.com/antz22/django-auth-template.git
-cd django-auth-template
-cd project_name
+$ git clone https://github.com/antz22/django-auth-template.git
+$ cd django-auth-template
+$ cd project_name
 ```
 
 To rename the project, navigate to project_name/settings.py and change the following variables:
@@ -43,24 +43,24 @@ Then, create a virtual environment for your pip dependencies. Depending on your 
 (in project_name directory)
 
 ```shell
-virtualenv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+$ virtualenv .venv
+$ source .venv/bin/activate
+$ pip install -r requirements.txt
 ```
 
 
 Finally, initialize the database and create an admin user. For createsuperuser, you can leave the email field blank and call your username 'admin'.
 
 ```shell
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
+$ python manage.py makemigrations
+$ python manage.py migrate
+$ python manage.py createsuperuser
 ```
 
 To run the server, use the following.
 
 ```shell
-python manage.py runserver
+$ python manage.py runserver
 ```
 
 You can navigate to the 127.0.0.1:8000/admin url and login with your superuser credentials to access the database.
