@@ -29,6 +29,10 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
+# for authentication
+AUTH_USER_MODEL = 'core.User'
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -71,7 +75,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+# CHANGE
 ROOT_URLCONF = 'project_name.urls'
 
 TEMPLATES = [
@@ -90,6 +94,7 @@ TEMPLATES = [
     },
 ]
 
+# CHANGE
 WSGI_APPLICATION = 'project_name.wsgi.application'
 
 
